@@ -7,8 +7,7 @@
 #    dest: /tmp/test.file
 #    mode: '0600'
 files_copy:
-  - data: {{ newvar | b64decode }}
-    dest: /tmp/private-key.pem
+  - dest: /tmp/private-key.pem
     mode: '0400'
 
 # List of templates to render
