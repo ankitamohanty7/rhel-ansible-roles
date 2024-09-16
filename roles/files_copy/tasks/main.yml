@@ -11,8 +11,8 @@
     remote_src: "{{ item.remote_src | default(omit) }}"
   register: copy_files
   loop: "{{ files_copy | default([], true) }}"
-  loop_control:
-    label: "{{ item.data + ' -> ' + item.dest }}"
+  #loop_control:
+   # label: "{{ item.data + ' -> ' + item.dest }}"
 
 - name: Create files from templates
   template:
