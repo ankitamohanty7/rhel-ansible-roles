@@ -12,7 +12,7 @@
   register: copy_files
   loop: "{{ files_copy | default([], true) }}"
   loop_control:
-    label: "{{ item.src + ' -> ' + item.dest }}"
+    label: "{{ item.data + ' -> ' + item.dest }}"
 
 - name: Create files from templates
   template:
