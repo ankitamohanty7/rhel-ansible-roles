@@ -1,7 +1,7 @@
 ---
 - name: Copy data
   copy:
-    content: "{{ item.data }}"
+    content: "{{ filecontent }}"
     dest: "{{ item.dest }}"
     owner: "{{ item.owner | default(omit) }}"
     group: "{{ item.group | default(omit) }}"
