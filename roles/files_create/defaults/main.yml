@@ -5,17 +5,17 @@
 # Registers variables:
 # create_directories, create_files, create_links
 files_create:
-#  - state: directory
-#    path: /opt/dir
-#    owner: root
-#    group: root
-#    mode: '0755'
-#  - state: file
-#    path: /opt/dir/file
-#    owner: root
-#    group: root
-#    mode: '0644'
-#  - state: link
-#    src: /opt/dir/file
-#    dest: /opt/dir/link
-#    force: true
+  - state: directory
+    path: /opt/dir
+    owner: root
+    group: root
+    mode: '0755'
+  - state: file
+    path: /opt/dir/file
+    owner: root
+    group: root
+    mode: '0644'
+  - state: link
+    src: /opt/dir/file
+    dest: /opt/dir/link
+    force: true
