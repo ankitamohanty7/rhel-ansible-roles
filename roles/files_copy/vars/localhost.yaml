@@ -1,1 +1,2 @@
-
+gather_facts: False
+ansible_connection: local
